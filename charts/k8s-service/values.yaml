@@ -595,10 +595,10 @@ scratchPaths: {}
 
 # hostPaths is a map of key value pairs that specifies which paths in the container should be setup as hostPaths.
 # Example:
-# hostPaths:
-# - name: example-volume
-#    path: /data/foo
-#    type: Directory
+#hostPaths:
+#  "download":
+#    path: /tmp/download
+#    type: DirectoryOrCreate
 
 hostPaths: {}
 

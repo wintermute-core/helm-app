@@ -449,7 +449,6 @@ spec:
         - name: {{ $name }}
           emptyDir: {}
     {{- end }}
-    /* inject host path volumes */
     {{- range $name, $value := .Values.hostPaths }}
         - name: {{ $name }}
           hostPath:
