@@ -593,6 +593,16 @@ persistentVolumes: {}
 #   example: /mnt/scratch
 scratchPaths: {}
 
+# hostPaths is a map of key value pairs that specifies which paths in the container should be setup as hostPaths.
+# Example:
+# hostPaths:
+# - name: example-volume
+#    path: /data/foo
+#    type: Directory
+
+hostPaths: {}
+
+
 # emptyDirs is a map of key value pairs that specifies which paths in the container should be setup as an emptyDir volume.
 # Under the hood each entry in the map is converted to a volume stored on whatever medium that backs the node
 # (disk, SSD, network storage) and mounted into the container on the path provided as the value.
